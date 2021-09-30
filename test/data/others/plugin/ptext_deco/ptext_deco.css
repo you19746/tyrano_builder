@@ -1,0 +1,339 @@
+/* 2018.04.12 @ko10panda edit */
+
+/* フォントカラー変更
+--------------------------------------- */
+.color_black  { color: #000000; } /* 黒 */
+.color_glay   { color: #999999; } /* 灰色 */
+.color_white  { color: #FFFFFF; } /* 白 */
+.color_red    { color: #DA6272; } /* 赤 */
+.color_orange { color: #F3C759; } /* オレンジ */
+.color_yellow { color: #FFEE55; } /* 黄 */
+.color_lime   { color: #C0D860; } /* ライム */
+.color_green  { color: #3DB680; } /* 緑 */
+.color_aqua   { color: #42AAC7; } /* 水色 */
+.color_blue   { color: #3E588F; } /* 青 */
+.color_purple { color: #815490; } /* 紫 */
+.color_violet { color: #B75C9D; } /* 菫 */
+.color_pink   { color: #D45D87; } /* ピンク */
+
+
+/* フォントサイズ変更
+--------------------------------------- */
+.size_300per { font-size: 300%; } /* 元サイズの3倍 */
+.size_250per { font-size: 250%; } /* 元サイズの2.5倍 */
+.size_200per { font-size: 200%; } /* 元サイズの2倍 */
+.size_150per { font-size: 150%; } /* 元サイズの1.5倍 */
+.size_075per { font-size:  75%; } /* 元サイズの0.75倍 */
+.size_050per { font-size:  50%; } /* 元サイズの0.5倍 */
+
+
+/* ドロップシャドウ（横書きのみ）　※縦書きで使用するときはX座標をマイナス側に指定
+------------------------------------------------------------------ */
+/* ぼかしなし */
+.shadow_black  { text-shadow: .05em .05em 0 #141414; }
+.shadow_glay   { text-shadow: .05em .05em 0 #999999; }
+.shadow_white  { text-shadow: .05em .05em 0 #F5F5F5; }
+.shadow_red    { text-shadow: .05em .05em 0 #DA6272; }
+.shadow_orange { text-shadow: .05em .05em 0 #F3C759; }
+.shadow_yellow { text-shadow: .05em .05em 0 #FFEE55; }
+.shadow_lime   { text-shadow: .05em .05em 0 #C0D860; }
+.shadow_green  { text-shadow: .05em .05em 0 #3DB680; }
+.shadow_aqua   { text-shadow: .05em .05em 0 #42AAC7; }
+.shadow_blue   { text-shadow: .05em .05em 0 #3E588F; }
+.shadow_purple { text-shadow: .05em .05em 0 #815490; }
+.shadow_violet { text-shadow: .05em .05em 0 #B75C9D; }
+.shadow_pink   { text-shadow: .05em .05em 0 #D45D87; }
+
+/* ぼかしあり */
+.shadow_blur_black  { text-shadow: .05em .05em .16em rgba( 20,  20,  20, .8); }
+.shadow_blur_glay   { text-shadow: .05em .05em .16em rgba(153, 153, 153, .8); }
+.shadow_blur_white  { text-shadow: .05em .05em .16em rgba(245, 245, 245, .8); }
+.shadow_blur_red    { text-shadow: .05em .05em .16em rgba(218,  98, 114, .8); }
+.shadow_blur_orange { text-shadow: .05em .05em .16em rgba(243, 199,  89, .8); }
+.shadow_blur_yellow { text-shadow: .05em .05em .16em rgba(255, 238,  85, .8); }
+.shadow_blur_lime   { text-shadow: .05em .05em .16em rgba(192, 216,  96, .8); }
+.shadow_blur_green  { text-shadow: .05em .05em .16em rgba( 61, 182, 128, .8); }
+.shadow_blur_aqua   { text-shadow: .05em .05em .16em rgba( 66, 170, 199, .8); }
+.shadow_blur_blue   { text-shadow: .05em .05em .16em rgba( 62,  88, 143, .8); }
+.shadow_blur_purple { text-shadow: .05em .05em .16em rgba(129,  84, 144, .8); }
+.shadow_blur_violet { text-shadow: .05em .05em .16em rgba(183,  92, 157, .8); }
+.shadow_blur_pink   { text-shadow: .05em .05em .16em rgba(212,  93, 135, .8); }
+
+
+/* ふちどり（2px）
+--------------------------------------- */
+.edge_black {
+	text-shadow:
+	 1px  0px #141414,	-1px  0px #141414,	 0px  1px #141414,	 0px -1px #141414,
+	 1px  1px #141414,	 1px -1px #141414,	-1px  1px #141414,	-1px -1px #141414;
+}
+
+.edge_gray {
+	text-shadow:
+	 1px  0px #999999,	-1px  0px #999999,	 0px  1px #999999,	 0px -1px #999999,
+	 1px  1px #999999,	 1px -1px #999999,	-1px  1px #999999,	-1px -1px #999999;
+}
+
+.edge_white {
+	text-shadow:
+	 1px  0px #F5F5F5,	-1px  0px #F5F5F5,	 0px  1px #F5F5F5,	 0px -1px #F5F5F5,
+	 1px  1px #F5F5F5,	 1px -1px #F5F5F5,	-1px  1px #F5F5F5,	-1px -1px #F5F5F5;
+}
+
+.edge_red {
+	text-shadow:
+	 1px  0px #DB1128,	-1px  0px #DB1128,	 0px  1px #DB1128,	 0px -1px #DB1128,
+	 1px  1px #DB1128,	 1px -1px #DB1128,	-1px  1px #DB1128,	-1px -1px #DB1128;
+}
+
+.edge_orange {
+	text-shadow:
+	 1px  0px #EC9800,	-1px  0px #EC9800,	 0px  1px #EC9800,	 0px -1px #EC9800,
+	 1px  1px #EC9800,	 1px -1px #EC9800,	-1px  1px #EC9800,	-1px -1px #EC9800;
+}
+
+.edge_yellow {
+	text-shadow:
+	 1px  0px #FFEE55,	-1px  0px #FFEE55,	 0px  1px #FFEE55,	 0px -1px #FFEE55,
+	 1px  1px #FFEE55,	 1px -1px #FFEE55,	-1px  1px #FFEE55,	-1px -1px #FFEE55;
+}
+
+.edge_lime {
+	text-shadow:
+	 1px  0px #C0D860,	-1px  0px #C0D860,	 0px  1px #C0D860,	 0px -1px #C0D860,
+	 1px  1px #C0D860,	 1px -1px #C0D860,	-1px  1px #C0D860,	-1px -1px #C0D860;
+}
+
+.edge_green {
+	text-shadow:
+	 1px  0px #3DB680,	-1px  0px #3DB680,	 0px  1px #3DB680,	 0px -1px #3DB680,
+	 1px  1px #3DB680,	 1px -1px #3DB680,	-1px  1px #3DB680,	-1px -1px #3DB680;
+}
+
+.edge_aqua {
+	text-shadow:
+	 1px  0px #42AAC7,	-1px  0px #42AAC7,	 0px  1px #42AAC7,	 0px -1px #42AAC7,
+	 1px  1px #42AAC7,	 1px -1px #42AAC7,	-1px  1px #42AAC7,	-1px -1px #42AAC7;
+}
+
+.edge_blue {
+	text-shadow:
+	 1px  0px #3E588F,	-1px  0px #3E588F,	 0px  1px #3E588F,	 0px -1px #3E588F,
+	 1px  1px #3E588F,	 1px -1px #3E588F,	-1px  1px #3E588F,	-1px -1px #3E588F;
+}
+
+.edge_purple {
+	text-shadow:
+	 1px  0px #815490,	-1px  0px #815490,	 0px  1px #815490,	 0px -1px #815490,
+	 1px  1px #815490,	 1px -1px #815490,	-1px  1px #815490,	-1px -1px #815490;
+}
+
+.edge_violet {
+	text-shadow:
+	 1px  0px #B75C9D,	-1px  0px #B75C9D,	 0px  1px #B75C9D,	 0px -1px #B75C9D,
+	 1px  1px #B75C9D,	 1px -1px #B75C9D,	-1px  1px #B75C9D,	-1px -1px #B75C9D;
+}
+
+.edge_pink {
+	text-shadow:
+	 1px  0px #D45D87,	-1px  0px #D45D87,	 0px  1px #D45D87,	 0px -1px #D45D87,
+	 1px  1px #D45D87,	 1px -1px #D45D87,	-1px  1px #D45D87,	-1px -1px #D45D87;
+}
+
+/* 下線
+--------------------------------------- */
+.underline_black  { border-bottom: solid 2px #141414; }
+.undeliner_glay   { border-bottom: solid 2px #999999; }
+.underline_white  { border-bottom: solid 2px #FFFFFF; }
+.underline_red    { border-bottom: solid 2px #DB1128; }
+.underline_orange { border-bottom: solid 2px #EC9800; }
+.underline_yellow { border-bottom: solid 2px #FFEE55; }
+.underline_lime   { border-bottom: solid 2px #C0D860; }
+.underline_green  { border-bottom: solid 2px #3DB680; }
+.underline_aqua   { border-bottom: solid 2px #42AAC7; }
+.underline_blue   { border-bottom: solid 2px #3E588F; }
+.underline_purple { border-bottom: solid 2px #815490; }
+.underline_violet { border-bottom: solid 2px #B75C9D; }
+.underline_pink   { border-bottom: solid 2px #D45D87; }
+
+
+/* 下線（点線）
+--------------------------------------- */
+.dotted_black  { border-bottom: dotted 2px #141414; }
+.dotted_glay   { border-bottom: dotted 2px #999999; }
+.dotted_white  { border-bottom: dotted 2px #FFFFFF; }
+.dotted_red    { border-bottom: dotted 2px #DB1128; }
+.dotted_orange { border-bottom: dotted 2px #EC9800; }
+.dotted_yellow { border-bottom: dotted 2px #FFEE55; }
+.dotted_lime   { border-bottom: dotted 2px #C0D860; }
+.dotted_green  { border-bottom: dotted 2px #3DB680; }
+.dotted_aqua   { border-bottom: dotted 2px #42AAC7; }
+.dotted_blue   { border-bottom: dotted 2px #3E588F; }
+.dotted_purple { border-bottom: dotted 2px #815490; }
+.dotted_violet { border-bottom: dotted 2px #B75C9D; }
+.dotted_pink   { border-bottom: dotted 2px #D45D87; }
+
+
+/* 下線（ダッシュ）
+--------------------------------------- */
+.dashed_black  { border-bottom: dashed 2px #141414; }
+.dashed_glay   { border-bottom: dashed 2px #999999; }
+.dashed_white  { border-bottom: dashed 2px #FFFFFF; }
+.dashed_red    { border-bottom: dashed 2px #DB1128; }
+.dashed_orange { border-bottom: dashed 2px #EC9800; }
+.dashed_yellow { border-bottom: dashed 2px #FFEE55; }
+.dashed_lime   { border-bottom: dashed 2px #C0D860; }
+.dashed_green  { border-bottom: dashed 2px #3DB680; }
+.dashed_aqua   { border-bottom: dashed 2px #42AAC7; }
+.dashed_blue   { border-bottom: dashed 2px #3E588F; }
+.dashed_purple { border-bottom: dashed 2px #815490; }
+.dashed_violet { border-bottom: dashed 2px #B75C9D; }
+.dashed_pink   { border-bottom: dashed 2px #D45D87; }
+
+
+/* マーカー（全体）
+--------------------------------------- */
+.marker_black  { background: linear-gradient(transparent 0%, #141414 0%); }
+.marker_glay   { background: linear-gradient(transparent 0%, #999999 0%); }
+.marker_white  { background: linear-gradient(transparent 0%, #FFFFFF 0%); }
+.marker_red    { background: linear-gradient(transparent 0%, #DB1128 0%); }
+.marker_orange { background: linear-gradient(transparent 0%, #EC9800 0%); }
+.marker_yellow { background: linear-gradient(transparent 0%, #FFEE55 0%); }
+.marker_lime   { background: linear-gradient(transparent 0%, #C0D860 0%); }
+.marker_green  { background: linear-gradient(transparent 0%, #3DB680 0%); }
+.marker_aqua   { background: linear-gradient(transparent 0%, #42AAC7 0%); }
+.marker_blue   { background: linear-gradient(transparent 0%, #3E588F 0%); }
+.marker_purple { background: linear-gradient(transparent 0%, #815490 0%); }
+.marker_violet { background: linear-gradient(transparent 0%, #B75C9D 0%); }
+.marker_pink   { background: linear-gradient(transparent 0%, #D45D87 0%); }
+
+
+/* マーカー（下半分）
+--------------------------------------- */
+.marker_half_black  { background: linear-gradient(transparent 70%, #141414 70%); }
+.marker_half_glay   { background: linear-gradient(transparent 70%, #999999 70%); }
+.marker_half_white  { background: linear-gradient(transparent 70%, #FFFFFF 70%); }
+.marker_half_red    { background: linear-gradient(transparent 70%, #DB1128 70%); }
+.marker_half_orange { background: linear-gradient(transparent 70%, #EC9800 70%); }
+.marker_half_yellow { background: linear-gradient(transparent 70%, #FFEE55 70%); }
+.marker_half_lime   { background: linear-gradient(transparent 70%, #C0D860 70%); }
+.marker_half_green  { background: linear-gradient(transparent 70%, #3DB680 70%); }
+.marker_half_aqua   { background: linear-gradient(transparent 70%, #42AAC7 70%); }
+.marker_half_blue   { background: linear-gradient(transparent 70%, #3E588F 70%); }
+.marker_half_purple { background: linear-gradient(transparent 70%, #815490 70%); }
+.marker_half_violet { background: linear-gradient(transparent 70%, #B75C9D 70%); }
+.marker_half_pink   { background: linear-gradient(transparent 70%, #D45D87 70%); }
+
+
+/* 発光
+--------------------------------------- */
+
+.glow_white {
+	text-shadow:
+		0 0 25px #FFF,
+		0 0 15px #FFF,
+		0 0 10px #FFF,
+		0 0  7px #FFF,
+		0 0  5px #FFF,
+		0 0  1px #FFF;
+}
+
+.glow_red {
+	text-shadow:
+		0 0 25px #DB1128,
+		0 0 15px #DB1128,
+		0 0 10px #DB1128,
+		0 0  7px #DB1128,
+		0 0  5px #DB1128,
+		0 0  1px #FFF;
+}
+
+.glow_orange {
+	text-shadow:
+		0 0 25px #EC9800,
+		0 0 15px #EC9800,
+		0 0 10px #EC9800,
+		0 0  7px #EC9800,
+		0 0  5px #EC9800,
+		0 0  1px #FFF;
+}
+
+.glow_yellow {
+	text-shadow:
+		0 0 25px #FFEE55,
+		0 0 15px #FFEE55,
+		0 0 10px #FFEE55,
+		0 0  7px #FFEE55,
+		0 0  5px #FFEE55,
+		0 0  1px #FFF;
+}
+
+.glow_lime {
+	text-shadow:
+		0 0 25px #C0D860,
+		0 0 15px #C0D860,
+		0 0 10px #C0D860,
+		0 0  7px #C0D860,
+		0 0  5px #C0D860,
+		0 0  1px #FFF;
+}
+
+.glow_green {
+	text-shadow:
+		0 0 25px #3DB680,
+		0 0 15px #3DB680,
+		0 0 10px #3DB680,
+		0 0  7px #3DB680,
+		0 0  5px #3DB680,
+		0 0  1px #FFF;
+}
+
+.glow_aqua {
+	text-shadow:
+		0 0 25px #42AAC7,
+		0 0 15px #42AAC7,
+		0 0 10px #42AAC7,
+		0 0  7px #42AAC7,
+		0 0  5px #42AAC7,
+		0 0  1px #FFF;
+}
+
+.glow_blue {
+	text-shadow:
+		0 0 25px #3E588F,
+		0 0 15px #3E588F,
+		0 0 10px #3E588F,
+		0 0  7px #3E588F,
+		0 0  5px #3E588F,
+		0 0  1px #FFF;
+}
+
+.glow_purple {
+	text-shadow:
+		0 0 25px #815490,
+		0 0 15px #815490,
+		0 0 10px #815490,
+		0 0  7px #815490,
+		0 0  5px #815490,
+		0 0  1px #FFF;
+}
+
+.glow_violet {
+	text-shadow:
+		0 0 25px #B75C9D,
+		0 0 15px #B75C9D,
+		0 0 10px #B75C9D,
+		0 0  7px #B75C9D,
+		0 0  5px #B75C9D,
+		0 0  1px #FFF;
+}
+
+.glow_pink {
+	text-shadow:
+		0 0 25px #D45D87,
+		0 0 15px #D45D87,
+		0 0 10px #D45D87,
+		0 0  7px #D45D87,
+		0 0  5px #D45D87,
+		0 0  1px #FFF;
+}
